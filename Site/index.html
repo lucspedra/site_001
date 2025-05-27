@@ -99,9 +99,9 @@
                 margin-left: 2.5rem;
             }
             .redes_sociais>img:hover{
-                width: 75px;
-                height: 75px;
-                border: 10px solid #3aaffd;
+                width: 65px;
+                height: 65px;
+                cursor: pointer;
             }
         </style>
     </head> 
@@ -173,6 +173,20 @@
         </main>
     </body>
     <script>
-       
+       let instagram_btn = document.getElementById("insta");
+       let tiktok_btn = document.getElementById("tiktok");
+       let twitter_btn = document.getElementById("twitter");
+
+       instagram_btn.addEventListener("click", () => {
+        window.open("https://www.instagram.com/johncena", '_blank');
+       })
+
+       tiktok_btn.addEventListener("click", () => {
+        window.open("https://www.tiktok.com/@johncena", '_blank');
+       })
+
+       twitter_btn.addEventListener("click", () => {
+        window.open("https://twitter.com/JohnCena", '_blank');
+       })
     </script>
 </html>
